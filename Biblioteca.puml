@@ -1,3 +1,19 @@
 @startuml
 
+:Socio:
+
+:Biblioteca:
+
+package Biblioteca {
+(Reservar Libro)
+(Prestar Libro)
+(Devolver Libro)
+(Actualizar Catálogo)
+}
+
+Socio -- (Reservar Libro)
+Socio -- (Devolver Libro)
+Socio -- (Prestar Libro)
+Biblioteca -- (Actualizar Catálogo)
+Biblioteca -- (Prestar Libro)
 @enduml
