@@ -1,0 +1,9 @@
+@startuml
+
+:Agente:
+(Evaluar Solicitud de Crédito)
+(Solicitar Informacion adicional al cliente)
+
+Agente --> (Evaluar Solicitud de Crédito)
+(Solicitar Informacion adicional al cliente)..>(Evaluar Solicitud de Crédito): <<extend>>
+@enduml
