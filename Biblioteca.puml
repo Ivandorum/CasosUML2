@@ -4,7 +4,7 @@
 
 :Biblioteca:
 
-package Biblioteca {
+package biblioteca {
 (Reservar Libro)
 (Prestar Libro)
 (Devolver Libro)
