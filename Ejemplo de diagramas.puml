@@ -3,8 +3,14 @@
 :Empleado:
 :Administrador:
 package Empresa_Pedidos {
-
+    (Introducir Pedido) -- Empleado
+    (Cancelar Pedido) -- Empleado
+    (Obtener Estado Pedido) -- Empleado
+    (Borrar Pedido) -- Empleado
+    (Buscar Pedido) -- Empleado
+    (Alta Cliente) -- Empleado
+    (Buscar Cliente) -- Empleado
+    (Nuevo Producto) -- Administrador
+    (Borrar Producto) -- Administrador
 }
-Empresa_Pedidos -- Empleado
-Empresa_Pedidos -- Administrador
 @enduml
