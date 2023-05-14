@@ -1,0 +1,10 @@
+@startuml
+
+:Empleado:
+:Administrador:
+package Empresa_Pedidos {
+
+}
+Empresa_Pedidos -- Empleado
+Empresa_Pedidos -- Administrador
+@enduml
