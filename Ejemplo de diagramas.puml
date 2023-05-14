@@ -10,7 +10,15 @@ package Empresa_Pedidos {
     (Buscar Pedido) -- Empleado
     (Alta Cliente) -- Empleado
     (Buscar Cliente) -- Empleado
+
     (Nuevo Producto) -- Administrador
     (Borrar Producto) -- Administrador
+
+    (Alta Cliente) ..> (Introducir Pedido): <<extend>>
+    (Introducir Pedido)..>(Buscar Cliente):<<include>>
+    (Obtener Estado Pedido)..>(Buscar Pedido):<<include>>
+    (Cancelar Pedido) ..> (Buscar Pedido) <<include>>
+    (Introducir Pedido)<..(Pago en cuenta):<<extend>>
+    (Introducir Pedido)<..(Pago con tarjeta):<<extend>>
 }
 @enduml
